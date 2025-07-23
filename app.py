@@ -9,6 +9,7 @@ app.config.from_object(os.getenv("APP_SETTINGS", "settings.dev"))
 
 @app.route("/")
 def index():
+    print ("index")
     return {"message": f"Hello from {os.getenv('APP_SETTINGS')}"}
 
 if __name__ == "__main__":
