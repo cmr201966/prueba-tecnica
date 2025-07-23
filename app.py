@@ -12,4 +12,5 @@ def index():
     return {"message": f"Hello from {os.getenv('APP_SETTINGS')}"}
 
 if __name__ == "__main__":
+    print ("Hola")
     app.run(debug=True)
